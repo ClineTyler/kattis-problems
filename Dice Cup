@@ -1,0 +1,7 @@
+n, m = input().split(" ")
+n = int(n)
+m = int(m)
+rep = ""
+for i in range(min(n,m)+1,max(n,m)+2):
+  rep += str(i) + " "
+print(rep)
