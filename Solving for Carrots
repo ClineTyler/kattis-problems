@@ -1,0 +1,55 @@
+/*----Java-----
+ 20200204
+
+*/
+// import is a basic java method one can use for the most common method of reading in input from the keyboard 
+// the "*" is like the wild card 
+// it is like saying 
+//import java.util.Scanner;
+// The only diffrance is you do not need add more import methods from the util. 
+// it kind of sums it all up as one 
+// imports need to be before the class 
+
+import java.util.*;
+
+public class Main {
+//This class is just Main it is holding the main lowercase m 
+// static is a refrencen in where you can use it in any method without redeclaryying it. 
+//Scanner is the name of a method where you can assign it a var that will allow you to take in new input
+// you can only have one scanner and eventually you will learn that you need to close the scanner.
+// System.in is the paramter(paramater)
+// when calling any method you must make said method new because you are making a new attritubute to it or var. 
+
+    static Scanner inp = new Scanner(System.in);
+
+    public static void main(String[] args) {
+        Scanner inp = new Scanner(System.in);
+        
+        // n is going to be the max 
+        // where as p will be the anwser for the problem
+        
+        int n;
+        int p;
+        
+        // I though of x as a the player "n" had to describe something of them self 
+        //so "n" = entry of person and description is x of n player
+        
+        String x="";
+        n=inp.nextInt();
+        p=inp.nextInt();
+        
+        // n sets the the max as you can see
+        
+        for (int i= 1;i<=n;i++){
+        
+        // x will take input depending on what n is
+            x=inp.next();           
+        }
+        
+        // this will be the out put the only thing they are asking for, the console to return in the problem.
+        // it needs to have all the other values but they do not need to be displayed.
+        
+        System.out.println(p);
+        
+    }
+}
